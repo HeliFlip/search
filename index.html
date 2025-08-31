@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
         <title>Search</title>
+        
     </head>
+
     <body>
-        <form action="https://www.google.com/search">
-            <input type="text", name="q">
-            <input type="submit", value="Google Search">
-        </form>
+        <!-- At the top of the page, there should be links in the upper-right of the page to go to Image Search or Advanced Search. -->
+        <div role="navigation">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="image-search.html">Image Search</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="advanced-search.html">Advanced Search</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- On the Google Search page, the user should be able to type in a query, click "Google Search", and be taken to the Google search results for that page.
+        - Search bar should be centered
+        - Search bar should have rounded corners
+        - Search button should be centered
+        - Search button should be underneath the search bar -->
+        <div class="mx-auto" style="width:1000px;" role="searchbox">
+            <div class="d-flex justify-content-center">
+                <form action="https://www.google.com/search">
+                <input type="text", name="q">
+                <input type="submit", value="Google Search", class="rounded-pill">
+                </form>
+            </div>
+        </div>
+        <!-- Add an "I'm Feeling Lucky" button to the main Google Search Page.
+         - Clicking the button should take users directly to the first Google search result for the query, and bypass the normal results page. -->
     </body>
 </html>
