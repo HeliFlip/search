@@ -32,25 +32,33 @@
         - Search button should be centered
         - Search button should be underneath the search bar -->
         
-        <div class="container-fluid" role="searchbox">                 
+        <div class="container-fluid" role="searchbox">
+            <style>
+                .buttons {
+                    text-align: center;
+                    .btn {
+                        width: 200px;
+                    }
+                }
+            </style>
                     <form action="https://www.google.com/search" role="search">
-                        <div class="row justify-content-md-center mb-5">
+                        <div class="row justify-content-md-center mb-3">
                             <div class="col-md-5"> 
                                 <input class="form-control rounded-pill" type="text" name="q" placeholder="Search">
                             </div>
                         </div>
-                        <div class="row justify-content-md-center">
-                            <div class="col col-lg-2">
-                                <input class="btn btn-primary rounded-pill" type="submit" value="Google Search" style="width: 220px;">
+                        <div class="row justify-content-md-center buttons">
+                            <div class="col col-lg-2" >
+                                <input class="btn btn-primary rounded-pill" type="submit" value="Google Search">
                             </div>
 
-                            <div class="col-md-1"></div>
+                            <div class="col-xs-1"></div>
 
                                     <!-- Add an "I'm Feeling Lucky" button to the main Google Search Page.
                                     - Clicking the button should take users directly to the first Google search result for the query, and bypass the normal results page. -->
 
                             <div class="col col-lg-2">
-                                <input class="btn btn-primary rounded-pill" type="submit" value="I'm Feeling Lucky" style="width: 220px;">
+                                <input class="btn btn-primary rounded-pill" type="submit" value="I'm Feeling Lucky">
                             </div>
                         </div>
                     </form>
